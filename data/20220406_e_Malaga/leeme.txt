@@ -1,0 +1,54 @@
+Abril 6 de 2022
+
+Nomenclatura de la muestra f = fuerza
+La muestra p43 ha mostrado unas curvas en la descarga de fuerza que han sido seguidas por las curvas de corriente.
+
+Los ensayos se han realizado con precargas desde los 4 kg hasta los 9 kg.
+
+Ensayo CV con carga mecánica sobre la muestra p39:
+nomencaltura nombre fc_nombre de muestra fc = fuerza constante
+Se realizaron ensayos de compresión manteniento la carga a 4, 50, 100, 150, 200 y 250 kg. En cada carga constante se ejecutó una voltamperometría cíclica entre -0.5 y 0.5 V a una velocidad de 25 mV/s
+Cuando se llego al punto de carga constante se esperaron 20 segundos para iniciar la volatmetría cíclica.
+
+Abril 7 de 2022
+
+Para una segunda ronda de mediciones se aplicó la voltametría cíclica (CV) justo apenas se logra la carga constante. Estas medidas tienen la misma nomenclatura salvo un subindice ejemplo CV_p39_xxxkg_2
+OCP a:
+0 kg -0.000 V
+50 kg -0.178 V
+100 kg -0.177 V
+150 kg -0.176 V
+200 kg -0.175 V
+250 kg -0.174 V
+
+Luego se realizarón pruebas sobre las muestras p40 y p41 con la misma configuración de _2 (CV), pero no se nombró en la nomenclatura con _2
+
+p40 OCP a:
+0 kg -0.003 V
+50 kg -0.173 V
+100 kg -0.182 V
+150 kg -0.179 V
+200 kg -0.184 V
+250 kg -0.182 V
+
+p41 OCP a:
+0 kg -0.004 V
+50 kg -0.198 V
+100 kg -0.201 V
+150 kg -0.203 V
+200 kg -0.201 V
+250 kg -0.200 V
+
+La medida eléctrica a 250 kg no inició al tiempo con la carga, sin embargo se almaceno la medida. Este ensayo se repetira y se nombrará con subindice _2.
+
+p41_2 OCP a:
+0 kg -0.004 V
+50 kg -0.197 V
+100 kg -0.203 V
+150 kg -0.198 V
+200 kg -0.201 V
+250 kg -0.198 V
+
+Abril 11 de 2022
+
+Se realizaron medidas CV con cero de carga mecánica a las muestras p39, p40 y p41. Para las muestras que ya tenían estas mediciones se nombraron con subíndice _2.

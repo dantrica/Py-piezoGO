@@ -1,21 +1,35 @@
-# cement-based-composites
+# Cement-based-composites
+
 This repository includes scripts to analyze physicochemical, electrical, and mechanical data, such as UV-Vis, DLS, Z potential, impedance spectroscopy, OCP determination, transients, compressive strength, and others.
 
+## The repository contains:
 
-A README file is an important component of any software project, as it provides an introduction and overview of the project and helps users understand how to use the software. Here are some things you may want to include in your README file:
+- The Python module called [analytics_GO.ipynb](analytics_GO.ipynb) to compute the electromechanical characterization.
+- All [sample data](/data) acquired during the experimental campaign. Herein is located the main DataFrame "Medidas_GO.xlsx", which contains the information about the measurements performed and specimens fabrication procedures.
+- The [output files](/outputs), where the new dataframes (Excel files), figures (.png files), or new series (.txt files) are saved.
+- Some python [scripts](scripts) that can be called by [analytics_GO.ipynb](analytics_GO.ipynb) to improve the mechanical or electrical characterization.
+- The [Simulink](/Simulink) folder conotains the Simulink scripts (files with extension .slx) and the parameter estimator files for each rGO-cement composites frabricated.
 
-Project Description: Start by providing a brief description of your software project, including its purpose and any key features or benefits.
+## Project Description: 
 
-Installation instructions: Provide clear and concise instructions on how to install and run your software. Include any dependencies or prerequisites that users need to install before they can run your software.
+$\texttt{Pypiezo-GO}$ comprises a sequence of methods developed in Python language and implemented on a Google Colaboratory notebook apt for efficient cloud computing. The experimental database is organised with a DataFrame called $\texttt{Medidas GO.xlsx}$ including the paths and metadata of the experimental measurement files. In particular, the experimental database includes the measurement records extracted from cyclic voltammetry (CV), open circuit potential (OCP), and compressive testing (CT), as reported in reference [Triana-Camacho2023](https://doi.org/10.1016/j.cemconcomp.2023.105063). On this basis, $\texttt{Pypiezo-GO}$ synchronizes the mechanical and electrical records and calculates the effective capacitance and the piezoelectric parameters of voltage $g_{33}$ and charge $d_{33}$, which represent the key features of these materials for their use as strain sensors. The code also includes the possibility of calibrating a lumped equivalent circuiy developed in MATLAB/Simulink for signal processing applications.
 
-Usage instructions: Explain how to use your software, including any command-line arguments or options that users can use to customize its behavior. Provide examples or sample inputs/outputs to help users understand how the software works.
+## Usage instructions:
 
-License information: If you have chosen a license for your software, include information about the license in your README file. For example, if you have chosen the GPL, include a notice that the software is licensed under the GPL and provide instructions for users on how to obtain a copy of the license text.
+The module must be [analytics_GO.ipynb](analytics_GO.ipynb) uploaded to Google Drive and opened with Google Collaboratory. Then, the folders [data](/data), [scripts](/scripts), and [outputs](/outputs) must be uploaded to the Google Colab folder. 
 
-Troubleshooting: If you anticipate common issues or errors that users may encounter when using your software, include troubleshooting tips or a list of frequently asked questions in your README file.
+## License information:
 
-Contact information: Provide contact information, such as an email address or a link to a support forum, so that users can get in touch with you if they have questions or encounter issues with your software.
+The module [analytics_GO.ipynb](analytics_GO.ipynb) is open source and published under the GPL option. Nevertheless, the Matlab files require the user get has a LICENCE agreement with Matlab.
 
-Contributing: If you welcome contributions to your software, include information on how users can contribute, such as by submitting bug reports or code changes. Specify any guidelines or requirements for contributions.
+## Troubleshooting:
 
-Remember, your README file is often the first thing that users will see when they encounter your software project, so make sure it is clear, informative, and well-written.
+The users must be take into account that the pandas' library requires the openpyxl module. Google collaboratory uses to update the version of this library periodically. Then, the users must modify the version of openpyxl on the section <b>0.3. Importing the libraries: lmfit, pro_data, ... from the Colab directory in Google Drive.</b> into the module [analytics_GO.ipynb](analytics_GO.ipynb)
+
+### Matlab:
+The authors have tested the Matlab (Simulink model) scripts with Matlab 9.12 (R2022a), but it should be compatible also with older versions.
+
+
+## Contact information:
+
+For support, comments or sugestions feel free to contact dantrica@saber.uis.edu.co
